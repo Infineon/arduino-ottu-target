@@ -1,0 +1,3 @@
+[submodule "extras/ottu-target"]
+	path = extras/ottu-target
+	url = https://github.com/Infineon/ottu-target.git
