@@ -1,0 +1,18 @@
+fqbn: 
+  - esp32:esp32:featheresp32
+  - arduino:avr:mega
+  - arduino:renesas_uno:minima
+  - arduino:renesas_uno:unor4wifi
+  - arduino:samd:mkrzero
+  - infineon:psoc6:cy8ckit_062s2_ai
+  - infineon:xmc:kit_xmc11_boot_001
+  - infineon:xmc:kit_xmc14_2go
+  - infineon:xmc:kit_xmc47_relax
+
+additional_urls:
+  - core: infineon:xmc
+    url:  https://github.com/Infineon/XMC-for-Arduino/releases/latest/download/package_xmc_index.json
+  - core: infineon:psoc6
+    url:  https://github.com/Infineon/arduino-core-psoc6/releases/latest/download/package_psoc6_index.json
+  - core: esp32:esp32
+    url: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
