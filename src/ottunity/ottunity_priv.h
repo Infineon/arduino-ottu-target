@@ -5,8 +5,8 @@
 extern "C" {
 #endif
 
-#include "unity.h"
-#include "unity_fixture.h"
+#include "unity/unity.h"
+#include "unity/unity_fixture.h"
 
 #include "ottunity_cfg_dflt.h"
 
