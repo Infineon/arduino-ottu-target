@@ -1,0 +1,27 @@
+diff --git a/src/unity/unity_internals.h b/src/unity/unity_internals.h
+index fbb670d..73b4973 100644
+--- a/src/unity/unity_internals.h
++++ b/src/unity/unity_internals.h
+@@ -8,6 +8,7 @@
+ #ifndef UNITY_INTERNALS_H
+ #define UNITY_INTERNALS_H
+ 
++#define UNITY_INCLUDE_CONFIG_H
+ #ifdef UNITY_INCLUDE_CONFIG_H
+ #include "unity_config.h"
+ #endif
+diff --git a/src/ottunity/ottunity_priv.h b/src/ottunity/ottunity_priv.h
+index 195976b..8a9a4d0 100644
+--- a/src/ottunity/ottunity_priv.h
++++ b/src/ottunity/ottunity_priv.h
+@@ -5,8 +5,8 @@
+ extern "C" {
+ #endif
+ 
+-#include "unity.h"
+-#include "unity_fixture.h"
++#include "unity/unity.h"
++#include "unity/unity_fixture.h"
+ 
+ #include "ottunity_cfg_dflt.h"
+ 
