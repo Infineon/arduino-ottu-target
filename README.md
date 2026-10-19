@@ -3,8 +3,7 @@
 This library adapts [`ottu-target`](https://github.com/Infineon/ottu-target) for Arduino, enabling automated testing
 directly on embedded devices. 
 
-Find more all usage examples in the [`examples/`](examples/) directory, and the rest in the core `ottu-target` repository.
-
+Find more all usage examples in the [`examples/`](examples/) directory, and the rest of the documentation in the `ottu-target` repository.
 
 Tests run on the board and report their results over the Arduino `Serial`
 interface.
