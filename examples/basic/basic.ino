@@ -1,7 +1,6 @@
 #include "ottu.hpp"
 
-OTTUNITY_TEST(is_null_pointer)
-{
+OTTUNITY_TEST(is_null_pointer) {
     int* ptr = nullptr;
 
     TEST_ASSERT_NULL_MESSAGE(ptr, "Pointer should be null");
