@@ -1,0 +1,23 @@
+- repo: extras/ottu-target
+  tag: 0.1.0
+  head: 4fdcbb49e07a2f6771367ce49546a86323b54930
+  files:
+  - dest: src/unity/unity.h
+    src: libs/unity/src/unity.h
+  - dest: src/unity/unity.c
+    src: libs/unity/src/unity.c
+  - dest: src/unity/unity_internals.h
+    src: libs/unity/src/unity_internals.h
+  - dest: src/unity/unity_fixture.c
+    src: libs/unity/extras/fixture/src/unity_fixture.c
+  - dest: src/unity/unity_fixture.h
+    src: libs/unity/extras/fixture/src/unity_fixture.h
+  - dest: src/unity/unity_fixture_internals.h
+    src: libs/unity/extras/fixture/src/unity_fixture_internals.h
+  - dest: src/unity/unity_memory.h
+    src: libs/unity/extras/memory/src/unity_memory.h
+  - dest: src/unity/unity_memory.c
+    src: libs/unity/extras/memory/src/unity_memory.c
+  - dest: src/ottunity
+    src: src/ottunity
+  mode: copy
