@@ -8,7 +8,7 @@ void putCharacter(char c) {
 }
 
 // Method used by Unity to flush the output
-void flushCharacter() { Serial.flush(); }
+void flushCharacter() {
+    Serial.flush();
 }
-
-
+}
