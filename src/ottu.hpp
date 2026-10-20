@@ -3,14 +3,4 @@
 
 #include "ottunity/ottunity.h"
 
-#define OTTUNITY_RUN() \
-    void setup() { \
-        Serial.begin(115200); \
-        while (!Serial) { ; } \
-        \
-        OTTUNITY_SUITE_RUNNER(); \
-    } \
-    \
-    void loop() { }
-
-#endif /* __ARDUINO_OTTU_H */
+#endif
