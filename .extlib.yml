@@ -1,6 +1,6 @@
 - repo: extras/ottu-target
-  tag: 0.2.1
-  head: d4b1c2a8c17ea3b441baac0b0da0d3fdcdc61e9b
+  tag: 0.2.2
+  head: 47ff58d1a56df2fd05b227de8a5175ab29068c00
   files:
   - dest: src/unity/unity.h
     src: libs/unity/src/unity.h
