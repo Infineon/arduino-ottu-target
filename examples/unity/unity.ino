@@ -72,11 +72,11 @@
 
 TEST_GROUP(numeric_check);
 
-TEST_SETUP(numeric_check) { 
-    /* no setup */ 
+TEST_SETUP(numeric_check) {
+    /* no setup */
 }
 
-TEST_TEAR_DOWN(numeric_check) { 
+TEST_TEAR_DOWN(numeric_check) {
     /* no teardown */
 }
 
@@ -100,13 +100,16 @@ void run_all_tests() {
 void setup() {
     /* The Serial interface is used as Unity's standard output. */
     Serial.begin(115200);
-    while (!Serial) { ; } 
-} 
-    
-void loop() { 
-    const int   argc       = 2; 
-    const char *argv[argc] = { "", "-v" }; 
+    while (!Serial) {
+        ;
+    }
+}
+
+void loop() {
+    const int argc = 2;
+    const char *argv[argc] = { "", "-v" };
     UnityMain(argc, argv, run_all_tests);
-    
-    while(true) {} /* Run the tests just once.*/
-} 
+
+    while (true) {
+    }              /* Run the tests just once.*/
+}

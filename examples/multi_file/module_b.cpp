@@ -12,7 +12,7 @@ OTTUNITY_GROUP_TEST_SETUP(module_b) {
 
 OTTUNITY_GROUP_TEST_TEAR_DOWN(module_b) {
     // No teardown needed
-}   
+}
 
 OTTUNITY_GROUP_TEST(module_b, chars_not_equal) {
     TEST_ASSERT_NOT_EQUAL_MESSAGE(c, d, "Characters c and d should not be equal");
