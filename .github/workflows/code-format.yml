@@ -12,7 +12,12 @@ jobs:
       - name: Install Uncrustify
         run: sudo apt-get update && sudo apt-get install -y uncrustify
 
-      - name: Check C and header formatting
+      - name: Check C, C++, and Arduino sketch formatting
         run: |
-          git ls-files -z -- '*.c' '*.h' ':(exclude)src/unity/**' |
-            xargs -0 uncrustify -c uncrustify.cfg --check
+        git ls-files -z -- \
+          ':(glob)src/**/*.c' ':(glob)src/**/*.h' \
+          ':(glob)src/**/*.cpp' ':(glob)src/**/*.ino' \
+          ':(glob)examples/**/*.c' ':(glob)examples/**/*.h' \
+          ':(glob)examples/**/*.cpp' ':(glob)examples/**/*.ino' \
+          ':(exclude,glob)src/unity/**' |
+          xargs -0 uncrustify -c uncrustify.cfg --check
