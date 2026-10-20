@@ -3,9 +3,9 @@
 /* Boolean checks group */
 OTTUNITY_GROUP(boolean_checks);
 
-/** 
+/**
  * No setup and teardown functions needed.
- * Their definition is not required.   
+ * Their definition is not required.
  * It will run the default empty function.
  */
 
