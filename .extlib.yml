@@ -1,6 +1,6 @@
 - repo: extras/ottu-target
-  tag: 0.1.1
-  head: af96f82d8a05c816199d97d6afdde84d3609f1ae
+  tag: 0.2.1
+  head: d4b1c2a8c17ea3b441baac0b0da0d3fdcdc61e9b
   files:
   - dest: src/unity/unity.h
     src: libs/unity/src/unity.h
@@ -20,4 +20,6 @@
     src: libs/unity/extras/memory/src/unity_memory.c
   - dest: src/ottunity
     src: src/ottunity
+  - dest: src/ottu.h
+    src: src/ottu.h
   mode: copy
